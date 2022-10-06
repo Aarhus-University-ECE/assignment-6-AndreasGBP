@@ -57,11 +57,11 @@ int largest(node *l){
     node *p = l -> next;
     int max = p -> data;
 
-    while(p != NULL){
-      if(p -> data > max){
-        max = p -> data;
+    while(p != NULL){ //Goes through each element as long as != NULL
+      if(p -> data > max){ //Checks if current value is larger than max
+        max = p -> data; //If above is true, set this value to the new max
       }
-      p = p -> next;
+      p = p -> next; //Set p to the next value to check this
     }
 
     return max; 
